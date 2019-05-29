@@ -1,6 +1,3 @@
-$thisdir = "C:\Users\laws.colin\Documents\Git"
-. ($thisdir+"\Errorhandling.ps1")
-
 $mydir = split-path $MyInvocation.InvocationName -Parent
 $mydir
 function CheckUpdates {
