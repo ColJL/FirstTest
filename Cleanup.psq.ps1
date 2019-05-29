@@ -2,6 +2,7 @@
 
 $usertemp=$env:TEMP
 $wintemp = $env:windir +"\temp"
+$updates = $env:windir +"\softwaredistribution"
 function DelFiles {
     param (
         [string]$path
@@ -25,3 +26,4 @@ function DelFiles {
 }
 DelFiles -path $usertemp
 DelFiles -path $wintemp
+delfiles -path $updates
